@@ -1,5 +1,7 @@
 # DSV41 window harness: fenced, paired measurement windows for a production LLM server
 
+> **DGX sPLIce component.** Part of [DGX sPLIce](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload): DeepSeek-V4.1-Flash on 2x DGX Spark + 2x RTX 3090 drafter, x86 offload. That repository carries the current production source, the measurements with raw JSON, and the install guide.
+
 How PLI Labs measures a candidate change on the same two DGX Spark nodes that serve production, without risking
 production: open a HOLD, stop serving, alternate control and candidate starts, decide with a pre-registered rule, then
 restore production and prove it with six greedy references before closing. This repo is the shared harness ("WIN2") that
